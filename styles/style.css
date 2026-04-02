@@ -114,6 +114,7 @@
 
 .header__theme-menu-button:hover {
   outline: 1px solid rgba(var(--button-hover), 0.4);
+  cursor: pointer;
 }
 
 .header__theme-menu-button:focus {
@@ -121,7 +122,11 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border: 1px solid var(--border-decoration-color);
+  border-bottom: 1px solid var(--border-decoration-color);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
 }
 
 .link {
@@ -131,6 +136,7 @@
 
 .link:hover {
   border-bottom: 1px solid var(--card-text-color);
+  cursor: pointer;
 }
 
 .link:focus {

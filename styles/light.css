@@ -23,7 +23,35 @@
 
   .header__decoration {
     display: none;
+  }
 
+  .header__theme-menu-button_type_light {
+    border: 1px solid #353430;
   }
   
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-image: url(../images/cover-image-light.png);
+    --background-color: #fff1f7;
+    --color-title: #FFC2E6;
+    --decor-background-color: #FF8DCB;
+    --section-title-color: #353430;
+    --button-color: #353430;
+    --card-text-color: #353430;
+    --border-decoration-color: #353430;
+    --link-shadow-color: #FF8DCB;
+    --accent-color: #FF8DCB;
+    --button-hover: 53, 52, 48;
+
+    .header__decoration {
+      display: none;
+    }
+
+    .header__theme-menu-button_type_light {
+    border: 1px solid #353430;
+    }
+  }
+
+} 
