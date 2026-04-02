@@ -16,8 +16,10 @@
   --section-title-color: #353430;
   --button-color: #353430;
   --card-text-color: #353430;
-
-
+  --border-decoration-color: #353430;
+  --link-shadow-color: #FF8DCB;
+  --accent-color: #FF8DCB;
+  --button-hover: 53, 52, 48;
 
   .header__decoration {
     display: none;

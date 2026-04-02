@@ -4,7 +4,7 @@
 */
 
 :root {
-  --background-image: url(../images/cover-image.png);
+  --background-image: url(../images/cover-image-dark.png);
   --background-color: #000028;
   --color-title: #DB00FF;
   --decor-background-color: #FF0070;
@@ -13,5 +13,8 @@
   --accent-color: #FF0070;
   --button-color: #FF0070; 
   --card-text-color: #F1B2CE;
-
+  --border-decoration-color: #FF0070;
+  --link-shadow-color: #FF0070;
+  --button-hover: 255, 0, 112;
+  --text-font-size: 18px;
 }
