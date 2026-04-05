@@ -74,6 +74,7 @@
 
 .title-decor {
   background-color: var(--decor-background-color);
+  color: var(--title-decor-color);
   font-weight: 700;
   line-height: 23.4px;
   font-size: 18px;
@@ -95,6 +96,7 @@
 .header__theme-menu-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
   flex-direction: column;
 }
@@ -106,7 +108,7 @@
   font-size: 18px;
   line-height: 18px;
   text-align: center;
-  border: none;
+  border: transparent;
   text-transform: lowercase;
 }
 
@@ -230,10 +232,11 @@
 
 @media (width >= 768px) {
   .header {
-    padding-left: 0;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
+  }
+
+  .header__title {
+    margin-left: -20px;
   }
 
   .header__decoration {
@@ -350,15 +353,9 @@
    }
 
   .section__lower-concentration__list {
-    flex-direction: row;
+    display: grid;
     gap: 20px;
-    flex-wrap: nowrap;
-    flex-grow: 1;
-  }
-
-  .section__lower-concentration__list .section__card {
-    flex-grow: 1;
-    flex-basis: 0;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .section__better-concentration {
